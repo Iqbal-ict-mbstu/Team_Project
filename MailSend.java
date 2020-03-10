@@ -2,7 +2,7 @@ import java.util.Properties;
 import javax.mail.*;
 import javax.mail.internet.*;
 class Mailer{
-    public static void send(String from,String password,String to,String sub,String msg){
+    public static void send(final String from, final String password, String to, String sub, String msg){
         //Get properties object
         Properties props = new Properties();
         props.put("mail.smtp.host", "smtp.gmail.com");
@@ -35,7 +35,7 @@ class Mailer{
 
 public class MailSend{
     public static void main(String[] args) {
-        Mailer.send("iqbalhossen1563@gmail.com","Rupli1st15","sohanmbstu18011@gmail.com","From Iqbal","How r u?");
+        Mailer.send("sohanmbstu18011@gmail.com","01303341686s","sohanmbstu18011@gmail.com","From Iqbal","How r u?");
 
     }
 }
