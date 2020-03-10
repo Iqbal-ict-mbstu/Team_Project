@@ -36,7 +36,7 @@ class Mailer{
 public class MailSend{
     public static void main(String[] args) {
         //from,password,to,subject,message
-        Mailer.send("iqbalhossen1563@gmail.com","Rupli1st15","sabilhasan1999@gmail.com","From Iqbal","How r u?");
+        Mailer.send("iqbalhossen1563@gmail.com","your email","sabilhasan1999@gmail.com","From Iqbal","How r u?");
         //change from, password and to
     }
 }
