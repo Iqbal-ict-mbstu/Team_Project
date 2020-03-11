@@ -4,160 +4,131 @@
 <head>
     <meta charset="UTF-8">
     <title>Book Store</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#03a6f3">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
 </head>
+<jsp:include page="head.jsp"></jsp:include>
 
 <body>
-    <header>
-        <div class="main-menu">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand" href="index.jsp"><img src="images/logo.png" alt="logo"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="navbar-item">
-                                <a href="index.jsp" class="nav-link">Home</a>
-                            </li>
-                            <li class="navbar-item">
-                                <a href="shop.jsp" class="nav-link">Shop</a>
-                            </li>
-                            <li class="navbar-item active">
-                                <a href="about.jsp" class="nav-link">About</a>
-                            </li>
-
-                            <li class="navbar-item">
-                                <a href="login.jsp" class="nav-link">Login</a>
-                            </li>
-                        </ul>
-                        <div class="cart my-2 my-lg-0">
-                            <span>
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-                            <span class="quntity">3</span>
-                        </div>
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search here..." aria-label="Search">
-                            <span class="fa fa-search"></span>
-                        </form>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header>
+   <jsp:include page="header.jsp"></jsp:include>
     <div class="breadcrumb">
         <div class="container">
             <a class="breadcrumb-item" href="index.jsp">Home</a>
             <span class="breadcrumb-item active">About</span>
         </div>
     </div>
-    <section class="static about-sec">
+
         <div class="container">
             <h1>About Us</h1>
+            <br><br>
             <div class="img-sec">
-                <img src="images/about.jpg" alt="about">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only fiveLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five</p>
-            </div>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only fiveLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five</p>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only fiveLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five</p>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five</p>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="address">
-                        <h4>Our Address</h4>
-                        <h6>The BookStore Theme, 4th Store
-                        Beside that building, USA</h6>
-                        <h6>Call : 800 1234 5678</h6>
-                        <h6>Email : info@bookstore.com</h6>
-                    </div>
-                    <div class="timing">
-                        <h4>Timing</h4>
-                        <h6>Mon - Fri: 7am - 10pm</h6>
-                        <h6>​​Saturday: 8am - 10pm</h6>
-                        <h6>​Sunday: 8am - 11pm</h6>
-                    </div>
+                <img src="https://scontent.fdac27-1.fna.fbcdn.net/v/t1.15752-9/85157666_1030348617364676_2524113457649811456_n.jpg?_nc_cat=103&_nc_sid=b96e70&_nc_ohc=lyYw8ss60i8AX_NNc2W&_nc_ht=scontent.fdac27-1.fna&oh=4236c90fdabd0630e12dd2a43b887f30&oe=5E96C448">
                 </div>
-                <div class="col-md-3">
-                    <div class="navigation">
-                        <h4>Navigation</h4>
-                        <ul>
-                            <li><a href="index.jsp">Home</a></li>
-                            <li><a href="about.jsp">About Us</a></li>
-                            <li><a href="privacy-policy.jsp">Privacy Policy</a></li>
-                            <li><a href="terms-conditions.jsp">Terms</a></li>
-                            <li><a href="products.jsp">Products</a></li>
-                        </ul>
-                    </div>
-                    <div class="navigation">
-                        <h4>Help</h4>
-                        <ul>
-                            <li><a href="">Shipping & Returns</a></li>
-                            <li><a href="privacy-policy.jsp">Privacy</a></li>
+            <br><br><br>
+            <div>
+                    <img class="_1579 img" src="https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/fTt3W6Nw8z-.png" alt="">Mission:<br>
+                    To be the most customer-centric company where people can find happiness through product and service & be the happiest company if this earth.BookShop.com will one of the leading e-commerce organizations in Bangladesh.It will be indeed the biggest Online Bookshop of this country</p>
+            </div>
 
-                        </ul>
+
+
+            <div>
+                <img class="_1579 img" src="https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/fTt3W6Nw8z-.png" alt="">Company Overview:<br>
+                Book Shop.com is now one of the leading e-commerce organizations in Bangladesh. It is indeed the biggest Online Bookshop of this country that helps saving a lot of time and money. You can buy books online through few-clicks or convenient phone calls. With breathtaking discounts and offers, you can buy more from rokomari.com. Superfast cash on delivery service brings the products at your doorstep. Our customer support, return and replacement policies will surely add extra confidence in your online shopping experience. So Happy Shopping in Book Shop.com.
+
+            <br><br><br>
+            </div>
+            <div>
+                <b>Created by</b>
+                <p>We came together and create services to make a better world through IT technology.
+                Our staff are innovative professionals with experience from top IT field companies such as Dabang,
+                Samsung, and Pucca restaurant to identify and resolve problems in the retail market environment.
+                </p>
+            </div>
+            <br>
+            <br>
+
+            <h1 style="text-align: center">TEAM</h1>
+            <br>
+            <div class="card">
+<div class="row">
+    <div class="col-4">
+          <img src="image/iqbal.jpg" >
+        <br>
+        <div class="card-body">
+        <center>
+
+            <h3>Iqbal hossen </h3>
+            <br>
+            <p>Want to be a software develover<br>student of MBSTU </p>
+        </center>
+        </div>
+        <b></b>
+   </div>
+    <div class="col-4">
+        <center>
+
+
+        <img src="image/sohan.jpg">
+        <br>
+        <h3>Md Sohanur Rahman Sohan</h3>
+        <p>Want to be software Engineer<br>Student Of MBSTU </p>
+        </center>
+    </div>
+    <div class="col-4">
+        <img src="image/al-amin.jpeg">
+             <br>
+        <center>
+        <h3>Md Al Amin</h3>
+        <p>Want to be software Engineer<br>Student Of MBSTU </p>
+        </center>
+    </div>
+
+</div>
+</div>
+            <br>
+
+            <%--<div class="columns is-centered">
+                <div class="column is-half"><div class="column" style="margin-bottom:70px">
+                    <img src="https://lh3.googleusercontent.com/notXolF0cszQRY7O7-fIHmXNNDccPaPxR8uxU8OaGMaOCS2ZZEZNH0Y098wR0LgpMxss1cmtFUivUnd7-ZytI9Q7iHVz8amFT_uGN0eWnn98OZIJcyBWyCMFEGnFXDOzBfxaG-ut4BiWU88mNX7MJfNB6I_fbs_ckSLVtRxAAhlmfbU7ELpzVlboF4Je5rWNTb1qaTHc1kn7oIzh4L_q_7hLHHPeUfDgGXswZnBDQGgz_qMOXzP4NSzarVxSHnhF8ehIsFtTfTR1TB7Q4UcDpeIOC68awqWSvbqUniOb5PwcT0gZKWaUsEKxXn276jACsrK3AwFPVRdk1GPO0qwdtY_eEdnPM-r-RsNRZIenBwsDrKV03Mk4Vgnw6sATwVjwp30siHkywybjTe202edEDFHeCUfCu7XDuD2MtHiS9Hd9NsB4gZbzLCA_WHw96CCULBFuXsFlP2mp_gVsNQ11v7fCoY9HK4aw5TT-IrdmBvx4O_uAUBKeEIzJDzhzV0x_YO6OmtkhdYuF_D2Z5BBBNEKdKzE7O_a9zEiI6pwE_T0N7PKOohMbw4KfAw8hxoBmHsDqABlvc6JPxbkbRXlCk-f_z9RpUbgnOR4GOD7-srU9lSJ0_Cigqw8Esy3HiuUPZPFdRaYzwzO4aCq8iyomJwf2R37OqcHF0uk4BZHyPM3hbvAdzsnK=s680-no">
+                    <div class="text-description" style="margin-top:30px"><p style="margin-bottom:5px;font-weight:bold">Iqbal hossen</p>
+                        <p>Want to be a develover</p>
+                        <p>Team leader</p>
+                        <p>Student of MBSTU</p>
                     </div>
                 </div>
-                <div class="col-md-5">
-                    <div class="form">
-                        <h3>Quick Contact us</h3>
-                        <h6>We are now offering some good discount 
-                            on selected books go and shop them</h6>
-                        <form>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <input placeholder="Name" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="email" placeholder="Email" required>
-                                </div>
-                                <div class="col-md-12">
-                                    <textarea placeholder="Messege"></textarea>
-                                </div>
-                                <div class="col-md-12">
-                                    <button class="btn black">Alright, Submit</button>
-                                </div>
-                            </div>
-                        </form>
+                    <img src="https://lh3.googleusercontent.com/nLd4yu8qVsZ_lJNh0ygrzFjzYqsyCVc76QwsagMQI3DogLRHcIp8sY7ijSmvXH2gxF_n05AP6yov7CspY5UUOQplW-jlnDk31D7BRGrnUZ15ohStHv-XZfylJzE4Ov9nCupCQz2TX9vzhlPBvAnmK7vO9_EPBNx__tXFAuxLWzv3NPdaRgKZAr2oShLQGqBJc1l1mnOrU4_84wMtwg93mwGO1KvYDDTpR8US8OARXqLo815wxjy504AOSa6UaYPHZzhIjfrgIKgFmXK2DP8wXl6Rm0U4OKVybP6troLw2AzKYOiY43DZWJ2Ux3iYejyIhIJgFfRsMGdcFsGmjnsxkZtX88ns_Ne9sR1LB5wDpI7GIipQfOV8NUwfq4jfRfJBqNT4OfqGo5K-vUw5tOgTpc9WGsV427JdDw1jR54ro3q4AINCuc2miGa-WQTIXpMUEErQNEx4di-WA3swftSp-2a3dhhGGZw9cxg29mR6cc-KLNjoW8xoW6ZeNhQWhdU_41mqJxKkeEXIMnrBdMkaRiTKQpCAF8jmFomDDhD8taKqpA8hv9F97slI3eWdCVy8CH-mQyNK5u0mNHdJzrTcVhz063YYmkTDiOo1NMLARuNqgM7r2NO7KlqgPkC71VIzS8X4R_zdq8nDFKja9JMr1m9gVJK4JxKENcPGiT6MK-JcEUQfHLAk=s639-no" alt="sohan.jpg">
+                    <div class="text-description" style="margin-top:30px">
+                       <p style="margin-bottom:5px;font-weight:bold">Md Sohanur Islam sohan</p>
+                       <p>Co-Team Leader</p>
+                        <p>Want To be software engineer</p><p>Student of MBSTU</p>
                     </div>
-                </div>
+
             </div>
         </div>
-        <div class="copy-right">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h5>(C) 2017. All Rights Reserved. BookStore Wordpress Theme</h5>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="share align-middle">
-                            <span class="fb"><i class="fa fa-facebook-official"></i></span>
-                            <span class="instagram"><i class="fa fa-instagram"></i></span>
-                            <span class="twitter"><i class="fa fa-twitter"></i></span>
-                            <span class="pinterest"><i class="fa fa-pinterest"></i></span>
-                            <span class="google"><i class="fa fa-google-plus"></i></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+   </div>
+
         </div>
-    </footer>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-    <script src="js/custom.js"></script>
+
+   &lt;%&ndash;</div>
+        <div class="Develovers">
+        <div class ="img-sec">
+        <img src="https://lh3.googleusercontent.com/fAH-TjjSGKv-PRo-75TU3ElxRdcXQZszN6vFwUWnHaHwiGnrXxRWFmAakfLMueDFmorBM4mLg0DMOjDR2NITjsXy7N6bBWvYzUo6esTrDchTXqkEu-56YvQbY9daw4AXub5njL7lMTYqR7gAsm6S3xWmDbSZV7lYb-jLzgjj1eNL9qZnWlpBobpWG5Ehj38dhZNwFcbFgqZ-Rw0qNrC7gwax6STL7swHsOifFRlXwrETdHe3k55Jw7p8eZ66Z6QQ2-cGy4ya7MHHtDg5AL-aHZ5zC-Fa6QLmKOEyRcv5BQaxF4Ib2-vrOloMY7xtUQr3RXESEt_fRWGIuA1ojfRPWIVhk3LmAgE2t10LGowxEC9G_MTcmZKe3ep4NBQ9HQEy6PAkubDq-wkE2yULy_2LRoTeK5h89A_d24G_6TjtQfHMC2PuVL8uVsNO48LG9NOpTPbTLJM_uomcxc6H-jnKmijRI_xEjc64pDCopzFFhia8ws2wUXtlwXP6U9NVG-65ldGPtEJ3TMwsxA7BvC9_tEptH7oy-tZQ9crLM9yydf7zdma-CxOhdeGzK80-Yg90MoQmN0pTjrHWOksoszTXV5JfWi3w6GKnPLtQGT-20qRyTmkmIdkm7ECH7QJkDfR-tN9I_Whw3MM6F5YnGJMKkL0A6w8w1H1mOrOxGy1Q7OFiS-c32FTA=w295-h296-no">
+        </div>
+        <br>
+        <b>Md Sohanur Rahaman Sohan<br>Software Develover<br>Student Of MBSTU</b>
+
+        <div class="img-sec"><img src="https://lh3.googleusercontent.com/notXolF0cszQRY7O7-fIHmXNNDccPaPxR8uxU8OaGMaOCS2ZZEZNH0Y098wR0LgpMxss1cmtFUivUnd7-ZytI9Q7iHVz8amFT_uGN0eWnn98OZIJcyBWyCMFEGnFXDOzBfxaG-ut4BiWU88mNX7MJfNB6I_fbs_ckSLVtRxAAhlmfbU7ELpzVlboF4Je5rWNTb1qaTHc1kn7oIzh4L_q_7hLHHPeUfDgGXswZnBDQGgz_qMOXzP4NSzarVxSHnhF8ehIsFtTfTR1TB7Q4UcDpeIOC68awqWSvbqUniOb5PwcT0gZKWaUsEKxXn276jACsrK3AwFPVRdk1GPO0qwdtY_eEdnPM-r-RsNRZIenBwsDrKV03Mk4Vgnw6sATwVjwp30siHkywybjTe202edEDFHeCUfCu7XDuD2MtHiS9Hd9NsB4gZbzLCA_WHw96CCULBFuXsFlP2mp_gVsNQ11v7fCoY9HK4aw5TT-IrdmBvx4O_uAUBKeEIzJDzhzV0x_YO6OmtkhdYuF_D2Z5BBBNEKdKzE7O_a9zEiI6pwE_T0N7PKOohMbw4KfAw8hxoBmHsDqABlvc6JPxbkbRXlCk-f_z9RpUbgnOR4GOD7-srU9lSJ0_Cigqw8Esy3HiuUPZPFdRaYzwzO4aCq8iyomJwf2R37OqcHF0uk4BZHyPM3hbvAdzsnK=s680-no">
+        </div>
+        <div>
+            <b>Md Iqbal Hosen<br>Software Develover<br>Student Of MBSTU<b></div>
+&ndash;%&gt;--%>
+         </section>
+    <jsp:include page="footer.jsp"></jsp:include>
 </body>
 
 </html>
