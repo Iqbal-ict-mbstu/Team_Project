@@ -26,7 +26,8 @@
                         <li><a href="about.jsp">About Us</a></li>
                         <li><a href="privacy-policy.jsp">Privacy Policy</a></li>
                         <li><a href="terms-conditions.jsp">Terms</a></li>
-                        <li><a href="products.jsp">Products</a></li>
+                        <li><a href="view products.jsp">Products</a></li>
+                        </li>
                     </ul>
                 </div>
                 <div class="navigation">
