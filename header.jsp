@@ -1,43 +1,155 @@
+<% if ((session.getAttribute("username") == null) || session.getAttribute("username") == " ") {
 
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+%>
+you are not logged in.This is restricted page. </br>
+So, Please <a href="index.jsp">Login</a>
+<%} else {
+%>
+<!DOCTYPE html>
+<html>
 
-<body>
-<header>
-<div class="main-menu">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="index.jsp"><img src="images/logo.png" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="navbar-item active">
-                        <a href="index.jsp" class="nav-link">Home</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="shop.jsp" class="nav-link">Shop</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="about.jsp" class="nav-link">About</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="login.jsp" class="nav-link">Login</a>
-                    </li>
-                </ul>
-                <div class="cart my-2 my-lg-0">
-                            <span>
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-                    <span class="quntity">3</span>
-                </div>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search here..." aria-label="Search">
-                    <span class="fa fa-search"></span>
-                </form>
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>welcome</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <link href="BootstrapAdmin/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+        <link href="BootstrapAdmin/css/plugins/timeline/timeline.css" rel="stylesheet">
+        <link href="BootstrapAdmin/css/bootstrap.min.css" rel="stylesheet">
+        <link href="BootstrapAdmin/font-awesome/css/font-awesome.css" rel="stylesheet">
+        <link href="BootstrapAdmin/css/sb-admin.css" rel="stylesheet">
+
+
+
+        <script src="https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+        <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" type="text/javascript"></script>
+        <link type="text/css" rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+
+
+        <style>
+
+            .td-post-date {
+                color: #aaa;
+                display: inline-block;
+                position: relative;
+                top: 2px;
+            }
+            .title {
+                font-weight: 700 ;
+                color: #1f4363 !important;
+                font-size: 25px;
+                line-height: 33px;
+                text-decoration: none;
+            }
+            .fakeimg {
+                height: 200px;
+                background: none;
+                width: 100%;
+            }
+
+            #myBtn {
+                display: none;
+                position: fixed;
+                bottom: 20px;
+                right: 30px;
+                z-index: 99;
+                font-size: 18px;
+                border: none;
+                outline: none;
+                background-color: red;
+                color: white;
+                cursor: pointer;
+                padding: 15px;
+                border-radius: 4px;
+            }
+
+            #myBtn:hover {
+                background-color: #555;
+            }
+
+
+
+        </style>
+
+    </head>
+
+    <body style="overflow-x:hidden">
+
+        <div id="wrapper">
+
+          
+
+            <div >
+                <nav class="navbar navbar-default navbar-static-top fixed-top"  role="navigation" style="margin-bottom: 0;">
+                    <div class="col-md-5 col-md-offset-4" class="navbar-header">
+                        <h3 class="text-center"><a href="ProductNotifications"> ${spName}</a></h3>
+                        <h5 class="text-center">${address}</h5>
+                    </div>
+
+                    <ul class="nav navbar-top-links navbar-right">
+                       
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="userProfile.jsp"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                                </li>
+                                <li><a href="logoutServlet"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                                </li>
+                            </ul>
+                            <!-- /.dropdown-user -->
+                        </li>
+                    </ul>
+
+                </nav>
             </div>
-        </nav>
-    </div>
-</div>
-</header>
-</body>
+            <div>
+                <nav class="navbar-default navbar-static-side" role="navigation">
+                    <div style="position:fixed;" class="sidebar-collapse">
+                        <ul class="nav" id="side-menu">
+
+                            <li>
+                                <a href="ProductNotifications"><i class="fa fa-dashboard fa-fw"></i> Dashboard </a>
+                            </li>
+                            <li>
+                                <a href="sellProduct.jsp"><i class="fa fa-shopping-cart">  Sell Product</i></a>
+                            </li>
+                            <li>
+                                <a href="insertProduct.jsp"><i class="fa fa-plus-square-o">  Add Product</i></a>
+                            </li>
+                            <li>
+                                <a href="StockServlet"><i class="fa fa-edit fa-fw"></i> Stock</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-files-o fa-fw"></i> Report<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="DailyReportServlet">Daily Report</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Monthly Report</a>
+                                    </li>
+                                    <li>
+                                        <a href="yearlyReport.jsp">Yearly Report</a>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+
+            <div id="page-wrapper">
+                <div class="row">
+                    <div class="col-lg-12">
 
